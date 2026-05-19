@@ -20,3 +20,4 @@ jobs:
         uses: Yandex-Practicum/test-project-action@v1
         with:
           project: 'zakrivayuschiy-teg-ad'
+          verbose: true
