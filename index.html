@@ -332,7 +332,12 @@
     </main>
 
     <footer class="footer content-section">
-      <button class="button save-button button_save" type="button" aria-controls="dialog-id">
+      <button
+        class="button save-button button_save"
+        type="button"
+        aria-controls="dialog-id"
+        onclick="event.preventDefault(); if (!window['dialog-id'].open) window['dialog-id'].showModal()"
+      >
         <svg class="save-button__icon" width="21" height="21" viewBox="0 0 21 21" aria-hidden="true">
           <use href="#floppy" />
         </svg>
@@ -347,7 +352,11 @@
         </svg>
         <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
       </div>
-      <button class="button dialog__button" type="button">
+      <button
+        class="button dialog__button"
+        type="button"
+        onclick="event.preventDefault(); if (window['dialog-id'].open) window['dialog-id'].close()"
+      >
         <span class="button__text">ОК</span>
       </button>
     </dialog>
