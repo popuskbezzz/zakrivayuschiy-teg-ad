@@ -297,6 +297,10 @@
     inline-size: 100%;
   }
 
+  .header__logo {
+    font-size: clamp(2.8125rem, 1.875rem + 4.6875vw, 3.0625rem);
+  }
+
   .card,
   .header {
     border-inline: 2px solid var(--accent-color);

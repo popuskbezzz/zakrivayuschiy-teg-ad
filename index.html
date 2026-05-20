@@ -14,22 +14,43 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
+    <svg class="visually-hidden" aria-hidden="true">
+      <symbol id="floppy" viewBox="0 0 21 21" fill="currentColor">
+        <path d="M0 0h1.615v1.615H0zm0 1.615h1.615V3.23H0zm0 1.616h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.616h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.616h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.616h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.615h1.615v1.615H0zm0 1.616h1.615V21H0zM17.77 0v1.615h-1.616V0zm-1.616 0v1.615h-1.615V0zm-1.615 0v1.615h-1.615V0zm-1.616 0v1.615h-1.615V0zm-1.615 0v1.615H9.693V0zM9.692 0v1.615H8.077V0zM8.077 0v1.615H6.462V0zM6.462 0v1.615H4.847V0zM4.846 0v1.615H3.231V0zM3.23 0v1.615H1.617V0zm16.155 1.616V3.23H17.77V1.616zM4.846 3.23v1.616H3.231V3.23zm0-1.615V3.23H3.231V1.615zm0 3.231v1.615H3.231V4.846zm11.308-1.615v1.615h-1.615V3.231zm0-1.616V3.23h-1.615V1.615zm0 3.231v1.615h-1.615V4.846zM12.923 3.23v1.616h-1.615V3.23zm0-1.615V3.23h-1.615V1.615zm0 3.231v1.615h-1.615V4.846zm3.231 1.616v1.615H14.54V6.462zm-1.615 0v1.615h-1.615V6.462zm-1.615-.001v1.615h-1.615V6.461zm-1.616.001v1.615H9.693V6.462zm-1.615-.001v1.615H8.078V6.461zm-1.616.001v1.615H6.462V6.462zm-1.615 0v1.615H4.847V6.462zm-1.615-.001v1.615H3.232V6.461zm12.922 4.846v1.615h-1.615v-1.615zm-1.616.001v1.615h-1.615v-1.615z" />
+        <path d="M14.538 11.308v1.615h-1.615v-1.615zm-1.615-.001v1.615h-1.615v-1.615zm-1.616.001v1.615H9.692v-1.615zm-1.615-.001v1.615H8.077v-1.615zm-1.616.001v1.615H6.461v-1.615zm-1.615 0v1.615H4.846v-1.615zm-1.615-.001v1.615H3.23v-1.615zm12.924 1.616v1.615h-1.616v-1.615zm-12.924 0v1.615H3.231v-1.615z" />
+        <path d="M17.769 14.538v1.615h-1.615v-1.615zm-12.923 0v1.615H3.23v-1.615zm12.924 1.615v1.615h-1.616v-1.615zm-12.924.001v1.615H3.231v-1.615zm0 1.615v1.615H3.231v-1.615zm12.924 0v1.615h-1.616v-1.615zm1.614 1.616V21H17.77v-1.615zm-1.614-.001V21h-1.616v-1.615zm-1.616.001V21h-1.615v-1.615zm-1.616 0V21h-1.615v-1.615zm-1.615 0V21h-1.615v-1.615zm-1.616 0V21H9.692v-1.615zm-1.615 0V21H8.077v-1.615zm-1.615 0V21H6.462v-1.615zm-1.616 0V21H4.846v-1.615zm-1.615 0V21H3.231v-1.615zm-1.616 0V21H1.617v-1.615zM21 21h-1.615v-1.615H21zm0-1.615h-1.615V17.77H21zm0-1.616h-1.615v-1.615H21zm0-1.615h-1.615v-1.615H21zm0-1.616h-1.615v-1.615H21zm0-1.615h-1.615v-1.615H21zm0-1.616h-1.615V9.692H21z" />
+        <path d="M21 9.693h-1.615V8.078H21zm0-1.616h-1.615V6.462H21zm0-1.615h-1.615V4.847H21zm0-1.616h-1.615V3.231H21z" />
+      </symbol>
+    </svg>
+
     <header class="header content-section">
       <p class="header__logo" aria-hidden="true">&lt;/HTML&gt;</p>
       <h1 class="header__title">закрывающий тег</h1>
     </header>
 
     <main class="main">
-      <section class="cards content-section" aria-label="История обучения">
+      <section class="cards content-section" aria-labelledby="cards-title">
+        <h2 class="visually-hidden" id="cards-title">История обучения</h2>
+
         <article class="card">
-          <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+          <h3 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h3>
           <div class="card__image-wrapper">
             <span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
-            <img class="card__image filter-brightness" src="./images/post-1.jpg" alt="Рабочий стол с ноутбуком, ежедневником и заметками" loading="lazy" />
+            <img
+              class="card__image filter-brightness"
+              src="./images/post-1.jpg"
+              alt="Рабочий стол с ноутбуком, ежедневником и заметками"
+              loading="lazy"
+            />
           </div>
           <div class="card__content">
-            <p>В начале казалось, что нужно просто освежить базу и быстро войти в ритм. На деле пришлось заново собрать привычку читать задачу внимательно и не пропускать детали.</p>
-            <p>Этот этап помог настроиться: меньше спешки, больше проверок, больше уважения к мелочам.</p>
+            <p>
+              В начале казалось, что нужно просто освежить базу и быстро войти в ритм. На деле пришлось заново собрать
+              привычку читать задачу внимательно и не пропускать детали.
+            </p>
+            <p>
+              Этот этап помог настроиться: меньше спешки, больше проверок, больше уважения к мелочам.
+            </p>
             <div class="card__buttons">
               <button class="card__icon-button" type="button" aria-label="Поставить лайк">
                 <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -41,133 +62,269 @@
                   <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
                 </svg>
               </button>
-              <button class="button card__like-button" type="button"><span class="button__text">Like</span></button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <h2 class="card__title">1 спринт: Я - чистый лист</h2>
+          <h3 class="card__title">1 спринт: Я - чистый лист</h3>
           <div class="card__image-wrapper">
             <span class="card__label" aria-hidden="true">&lt;CSS&gt;</span>
-            <img class="card__image filter-contrast" src="./images/post-2.jpg" alt="Человек сидит рядом с книгами, ноутбуком и учебными материалами" loading="lazy" />
+            <img
+              class="card__image filter-contrast"
+              src="./images/post-2.jpg"
+              alt="Человек сидит рядом с книгами, ноутбуком и учебными материалами"
+              loading="lazy"
+            />
           </div>
           <div class="card__content">
-            <p>Первый спринт был похож на попытку договориться с пустым листом. Хотелось сразу писать красиво, но важнее оказалось просто начать и довести решение до рабочего состояния.</p>
-            <p>После первых ошибок стало понятнее, что верстка держится на повторяемых правилах, а не на угадывании.</p>
+            <p>
+              Первый спринт был похож на попытку договориться с пустым листом. Хотелось сразу писать красиво, но важнее
+              оказалось просто начать и довести решение до рабочего состояния.
+            </p>
+            <p>
+              После первых ошибок стало понятнее, что верстка держится на повторяемых правилах, а не на угадывании.
+            </p>
             <div class="card__buttons">
               <button class="card__icon-button" type="button" aria-label="Поставить лайк">
-                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="heart"><path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" /><path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" /><path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" /></g><path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" /></svg>
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <g class="heart">
+                    <path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+                    <path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                    <path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                  </g>
+                  <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+                </svg>
               </button>
-              <button class="button card__like-button" type="button"><span class="button__text">Like</span></button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <h2 class="card__title">1 спринт: А если не получится?</h2>
+          <h3 class="card__title">1 спринт: А если не получится?</h3>
           <div class="card__image-wrapper">
             <span class="card__label" aria-hidden="true">&lt;debug&gt;</span>
-            <img class="card__image filter-multiple" src="./images/post-3.jpg" alt="Крупный план монитора с фрагментами CSS-кода" loading="lazy" />
+            <img
+              class="card__image filter-multiple"
+              src="./images/post-3.jpg"
+              alt="Крупный план монитора с фрагментами CSS-кода"
+              loading="lazy"
+            />
           </div>
           <div class="card__content">
-            <p>Сомнения быстро стали частью процесса. Каждый странный отступ и каждый забытый селектор напоминали, что результат появляется после проверки гипотез.</p>
-            <p>Главный вывод был простым: если что-то не получилось, это не финал, а новая задача с меньшим радиусом поиска.</p>
+            <p>
+              Сомнения быстро стали частью процесса. Каждый странный отступ и каждый забытый селектор напоминали, что
+              результат появляется после проверки гипотез.
+            </p>
+            <p>
+              Главный вывод был простым: если что-то не получилось, это не финал, а новая задача с меньшим радиусом поиска.
+            </p>
             <div class="card__buttons">
               <button class="card__icon-button" type="button" aria-label="Поставить лайк">
-                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="heart"><path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" /><path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" /><path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" /></g><path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" /></svg>
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <g class="heart">
+                    <path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+                    <path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                    <path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                  </g>
+                  <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+                </svg>
               </button>
-              <button class="button card__like-button" type="button"><span class="button__text">Like</span></button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+          <h3 class="card__title">2 спринт: Погоня за идеалом</h3>
           <div class="card__image-wrapper">
             <span class="card__label" aria-hidden="true">&lt;layout&gt;</span>
-            <img class="card__image filter-grayscale" src="./images/post-4.jpg" alt="Человек работает за ноутбуком на деревянном столе" loading="lazy" />
+            <img
+              class="card__image filter-grayscale"
+              src="./images/post-4.jpg"
+              alt="Человек работает за ноутбуком на деревянном столе"
+              loading="lazy"
+            />
           </div>
           <div class="card__content">
-            <p>На этом этапе стало особенно заметно, что идеальная верстка не рождается с первого прохода. Ее приходится собирать слоями: структура, размеры, состояния, адаптив.</p>
-            <p>Перфекционизм мешал, пока не появился рабочий критерий: сделать аккуратно, проверить и исправить конкретное.</p>
+            <p>
+              На этом этапе стало заметно, что идеальная верстка не рождается с первого прохода. Ее приходится собирать
+              слоями: структура, размеры, состояния, адаптив.
+            </p>
+            <p>
+              Перфекционизм мешал, пока не появился рабочий критерий: сделать аккуратно, проверить и исправить конкретное.
+            </p>
             <div class="card__buttons">
               <button class="card__icon-button" type="button" aria-label="Поставить лайк">
-                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="heart"><path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" /><path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" /><path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" /></g><path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" /></svg>
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <g class="heart">
+                    <path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+                    <path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                    <path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                  </g>
+                  <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+                </svg>
               </button>
-              <button class="button card__like-button" type="button"><span class="button__text">Like</span></button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+          <h3 class="card__title">2 спринт: О тех, кто рядом</h3>
           <div class="card__image-wrapper">
             <span class="card__label" aria-hidden="true">&lt;team&gt;</span>
-            <img class="card__image filter-sepia" src="./images/post-5.jpg" alt="Люди обсуждают учебный проект за рабочим столом" loading="lazy" />
+            <img
+              class="card__image filter-sepia"
+              src="./images/post-5.jpg"
+              alt="Люди обсуждают учебный проект за рабочим столом"
+              loading="lazy"
+            />
           </div>
           <div class="card__content">
-            <p>Поддержка ревьюера, наставника и одногруппников стала отдельной частью обучения. Иногда один точный вопрос экономил больше времени, чем час одиночного поиска.</p>
-            <p>Постепенно стало проще показывать незавершенное решение и принимать замечания как способ быстрее улучшить код.</p>
+            <p>
+              Поддержка ревьюера, наставника и одногруппников стала отдельной частью обучения. Иногда один точный вопрос
+              экономил больше времени, чем час одиночного поиска.
+            </p>
+            <p>
+              Постепенно стало проще показывать незавершенное решение и принимать замечания как способ быстрее улучшить код.
+            </p>
             <div class="card__buttons">
               <button class="card__icon-button" type="button" aria-label="Поставить лайк">
-                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="heart"><path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" /><path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" /><path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" /></g><path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" /></svg>
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <g class="heart">
+                    <path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+                    <path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                    <path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                  </g>
+                  <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+                </svg>
               </button>
-              <button class="button card__like-button" type="button"><span class="button__text">Like</span></button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+          <h3 class="card__title">3 спринт: Обходные стратегии</h3>
           <div class="card__image-wrapper">
             <span class="card__label" aria-hidden="true">&lt;ideas&gt;</span>
-            <img class="card__image filter-saturate" src="./images/post-6.jpg" alt="Открытый ноутбук и записи с планом работы" loading="lazy" />
+            <img
+              class="card__image filter-saturate"
+              src="./images/post-6.jpg"
+              alt="Открытый ноутбук и записи с планом работы"
+              loading="lazy"
+            />
           </div>
           <div class="card__content">
-            <p>Когда готовое решение не находилось, приходилось менять угол. Разбить проблему на маленькие части, выключить лишние стили, проверить один блок в изоляции.</p>
-            <p>Так появились спокойствие и привычка не спорить с браузером, а смотреть, что он действительно отрисовал.</p>
+            <p>
+              Когда готовое решение не находилось, приходилось менять угол. Разбить проблему на маленькие части, выключить
+              лишние стили, проверить один блок в изоляции.
+            </p>
+            <p>
+              Так появились спокойствие и привычка не спорить с браузером, а смотреть, что он действительно отрисовал.
+            </p>
             <div class="card__buttons">
               <button class="card__icon-button" type="button" aria-label="Поставить лайк">
-                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="heart"><path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" /><path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" /><path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" /></g><path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" /></svg>
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <g class="heart">
+                    <path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+                    <path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                    <path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                  </g>
+                  <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+                </svg>
               </button>
-              <button class="button card__like-button" type="button"><span class="button__text">Like</span></button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+          <h3 class="card__title">3 спринт: Когда опускаются руки</h3>
           <div class="card__image-wrapper">
             <span class="card__label" aria-hidden="true">&lt;pause&gt;</span>
-            <img class="card__image filter-hue-rotate" src="./images/post-7.jpg" alt="Рабочее место с экраном ноутбука и учебными заметками" loading="lazy" />
+            <img
+              class="card__image filter-hue-rotate"
+              src="./images/post-7.jpg"
+              alt="Рабочее место с экраном ноутбука и учебными заметками"
+              loading="lazy"
+            />
           </div>
           <div class="card__content">
-            <p>Бывали моменты, когда хотелось закрыть редактор и не возвращаться. Но короткая пауза часто работала лучше, чем еще десять хаотичных правок подряд.</p>
-            <p>Самым полезным инструментом оказался порядок: проверить консоль, сверить селектор, открыть макет, пройтись по чек-листу.</p>
+            <p>
+              Бывали моменты, когда хотелось закрыть редактор и не возвращаться. Но короткая пауза часто работала лучше,
+              чем еще десять хаотичных правок подряд.
+            </p>
+            <p>
+              Самым полезным инструментом оказался порядок: проверить консоль, сверить селектор, открыть макет, пройтись
+              по чек-листу.
+            </p>
             <div class="card__buttons">
               <button class="card__icon-button" type="button" aria-label="Поставить лайк">
-                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="heart"><path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" /><path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" /><path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" /></g><path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" /></svg>
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <g class="heart">
+                    <path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+                    <path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                    <path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                  </g>
+                  <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+                </svg>
               </button>
-              <button class="button card__like-button" type="button"><span class="button__text">Like</span></button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <h2 class="card__title">Сейчас: Закрывающий тег</h2>
+          <h3 class="card__title">Сейчас: Закрывающий тег</h3>
           <div class="card__image-wrapper">
             <span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
-            <img class="card__image filter-blur" src="./images/post-8.jpg" alt="Ноутбук с открытым проектом и финальными заметками" loading="lazy" />
+            <img
+              class="card__image filter-blur"
+              src="./images/post-8.jpg"
+              alt="Ноутбук с открытым проектом и финальными заметками"
+              loading="lazy"
+            />
           </div>
           <div class="card__content">
-            <p>Финальный проект собирает все привычки вместе: семантику, переменные, адаптив, анимации, доступность и терпение к деталям.</p>
-            <p>Закрывающий тег здесь выглядит как точка, но на практике это скорее сохраненное состояние перед следующим шагом.</p>
+            <p>
+              Финальный проект собирает все привычки вместе: семантику, переменные, адаптив, анимации, доступность и
+              терпение к деталям.
+            </p>
+            <p>
+              Закрывающий тег здесь выглядит как точка, но на практике это скорее сохраненное состояние перед следующим шагом.
+            </p>
             <div class="card__buttons">
               <button class="card__icon-button" type="button" aria-label="Поставить лайк">
-                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="heart"><path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" /><path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" /><path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" /></g><path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" /></svg>
+                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <g class="heart">
+                    <path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" />
+                    <path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" />
+                    <path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" />
+                  </g>
+                  <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
+                </svg>
               </button>
-              <button class="button card__like-button" type="button"><span class="button__text">Like</span></button>
+              <button class="button card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
             </div>
           </div>
         </article>
@@ -175,14 +332,9 @@
     </main>
 
     <footer class="footer content-section">
-      <button
-        class="button save-button button_save"
-        type="button"
-        aria-controls="dialog-id"
-        onclick="if (!window['dialog-id'].open) window['dialog-id'].showModal()"
-      >
+      <button class="button save-button button_save" type="button" aria-controls="dialog-id">
         <svg class="save-button__icon" width="21" height="21" viewBox="0 0 21 21" aria-hidden="true">
-          <use href="./svg/floppy.svg#floppy" />
+          <use href="#floppy" />
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
@@ -191,15 +343,11 @@
     <dialog class="dialog" id="dialog-id">
       <div class="dialog__content">
         <svg class="dialog__icon" width="39" height="39" viewBox="0 0 21 21" aria-hidden="true">
-          <use href="./svg/floppy.svg#floppy" />
+          <use href="#floppy" />
         </svg>
         <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
       </div>
-      <button
-        class="button dialog__button"
-        type="button"
-        onclick="if (window['dialog-id'].open) window['dialog-id'].close()"
-      >
+      <button class="button dialog__button" type="button">
         <span class="button__text">ОК</span>
       </button>
     </dialog>
